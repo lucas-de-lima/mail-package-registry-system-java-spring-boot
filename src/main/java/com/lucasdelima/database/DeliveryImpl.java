@@ -9,6 +9,11 @@ public class DeliveryImpl implements DeliveryDAO {
     @Override
     public void save(DeliveryDTO entity) {
         System.out.println("save");
+        System.out.println("enviar notificação no whatsapp do destinatário");
+    }
+
+    public void monitoringDeliveryStatus(String deliveryId) {
+        System.out.println("monitorar status do pacote");
     }
 
     @Override
